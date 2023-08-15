@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.2s;
+}
+
 .App {
     min-height: 100vh;
     display: flex;
@@ -6,8 +14,9 @@
     background-color: aliceblue;
 }
 
-h1, p {
-    margin-block:  0px;
+h1,
+p {
+    margin-block: 0px;
 }
 
 .header {
@@ -56,7 +65,7 @@ form input:focus {
     border: 2px solid #371542;
 }
 
-form button {
+form .btn {
     width: 150px;
     margin-inline: auto;
     padding: 10px;
@@ -70,8 +79,12 @@ form button {
     cursor: pointer;
 }
 
-form button:active {
-    background-color: #9d5fda;
+form .btn:hover {
+    background-color: #ba75ff;
+}
+
+form .btn:active {
+    background-color: #9d5fda !important;
 }
 
 form input::placeholder {
@@ -80,7 +93,6 @@ form input::placeholder {
 }
 
 .main-content {
-    background-color: aliceblue;
     height: 100%;
     padding: 20px;
     flex-direction: column;
@@ -88,25 +100,39 @@ form input::placeholder {
     gap: 20px;
 }
 
+.main-content .content {
+    font-weight: 600;
+    width: 80%;
+    place-self: center;
+}
+
 .main-content h1 {
     font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .main-content .posts {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .posts .post {
     max-width: 900px;
     width: 100%;
-    padding: 15px 20px;
+    padding: 25px 20px;
     border-radius: 10px;
     text-align: center;
     background-color: rgb(215, 236, 255);
     margin-inline: auto;
-    gap: 10px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.posts .post .title {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(25, 50, 74);
 }
