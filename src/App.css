@@ -1,0 +1,112 @@
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+h1, p {
+    margin-block:  0px;
+}
+
+.header {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    background-color: rgb(86, 51, 120);
+}
+
+.header h1 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.header form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input {
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid #dab5ff;
+    outline: none;
+    max-width: 400px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+form input:focus {
+    background-color: #dab5ff;
+    border: 2px solid #371542;
+}
+
+form button {
+    width: 150px;
+    margin-inline: auto;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ba75ff;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+form button:active {
+    background-color: #9d5fda;
+}
+
+form input::placeholder {
+    font-weight: 600;
+    color: #725b89;
+}
+
+.main-content {
+    background-color: aliceblue;
+    height: 100%;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+.main-content h1 {
+    font-size: 25px;
+}
+
+.main-content .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.posts .post {
+    max-width: 900px;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(215, 236, 255);
+    margin-inline: auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
