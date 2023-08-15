@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Basic React Redux Project 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**This is a simple project that demonstrates the usage of Redux to manage the state of a React application. It also utilizes a placeholder API to handle asynchronous state management. The project is built using React, JSX, CSS, Bootstrap, and Redux.**
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+![15 08 2023_22 21 49_REC](https://github.com/vivek-chhabra/basic-react-redux-project/assets/105328667/af654ea5-cd48-42fc-b481-77e24ad852e3)
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![15 08 2023_22 22 24_REC](https://github.com/vivek-chhabra/basic-react-redux-project/assets/105328667/e1053b73-495a-40ad-bae3-4aaf5c4bb845)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+## Features ✨
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Redux store setup for global state management.
+- Integration of Redux Thunk middleware for handling asynchronous actions.
+- Interaction with a placeholder API to simulate asynchronous data fetching.
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure 🏗️
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```php
+basic-react-redux-project/
+│   ├── redux/         
+│   │   ├── actions/      # Redux action creators
+│   │   ├── store/        # Redux store configuration
+│   │   ├── reducer/      # Redux reducers and related directories
+│   ├── App.js            # Main application component
+│   └── index.js          # Entry point for the application
+├── public/
+│   ├── index.html        # HTML template
+│   └── ...
+├── package.json
+├── README.md
+└── ...
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
 
-### `npm run eject`
+## Technologies Used 🛠️
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project makes use of the following technologies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React**: A JavaScript library for building user interfaces.
+- **JSX**: A syntax extension for JavaScript used with React to describe UI components.
+- **CSS**: Cascading Style Sheets for styling the user interface.
+- **Bootstrap**: A popular CSS framework for responsive and stylish web design.
+- **Redux**: A state management library for maintaining global application state.
+- **Redux Thunk**: A middleware for Redux that allows handling of asynchronous actions.
+- **Placeholder API**: Simulated API interactions for showcasing asynchronous data fetching.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+These technologies work together to create a dynamic user interface while efficiently managing the application's state using Redux.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
